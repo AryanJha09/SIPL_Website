@@ -7,5 +7,4 @@ export * from "./TrustSection";
 export * from "./ClinicianSection";
 export * from "./ResearchSection";
 export * from "./VisionSection";
-export * from "./CTASection";
 export * from "./GenomicsPreviewSection";

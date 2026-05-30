@@ -2,6 +2,8 @@ import { Button } from "@/shared/ui/Button";
 import { Badge } from "@/shared/ui/Badge";
 import { MotionWrapper } from "@/shared/animations/MotionWrapper";
 import Link from "next/link";
+import Image from "next/image";
+import HeroImage from "@/shared/assets/Hero.jpg";
 
 export function HeroSection() {
   return (
@@ -57,14 +59,12 @@ export function HeroSection() {
 
           {/* Video Area */}
           <div className="relative w-full lg:w-[55%] min-h-[400px] lg:min-h-[500px] bg-[#131313] rounded-[32px] overflow-hidden order-1 lg:order-2">
-            <video
-              autoPlay
-              muted
-              loop
-              playsInline
-              preload="metadata"
-              className="absolute inset-0 w-full h-full object-cover opacity-90"
-              src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260302_085844_21a8f4b3-dea5-4ede-be16-d53f6973bb14.mp4"
+            <Image
+              src={HeroImage}
+              alt="LifeBack Screening"
+              fill
+              priority
+              className="object-cover opacity-90"
             />
 
             {/* Overlays */}
@@ -74,22 +74,7 @@ export function HeroSection() {
               </Badge>
             </div>
 
-            <div className="absolute bottom-6 right-6 z-10 bg-white p-5 rounded-2xl max-w-[240px]">
-              <div className="flex flex-col gap-3">
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[#131313]"></div>
-                  <span className="text-sm font-medium">Voice Signals</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[#131313]"></div>
-                  <span className="text-sm font-medium">Behavioral Patterns</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <div className="w-2 h-2 rounded-full bg-[#131313]"></div>
-                  <span className="text-sm font-medium">Clinical Insights</span>
-                </div>
-              </div>
-            </div>
+
           </div>
 
         </div>

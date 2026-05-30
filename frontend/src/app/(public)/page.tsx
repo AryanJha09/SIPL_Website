@@ -6,7 +6,6 @@ import { GenomicsPreviewSection } from "@/features/public/landing/sections/Genom
 import { ClinicianSection } from "@/features/public/landing/sections/ClinicianSection";
 import { TrustSection } from "@/features/public/landing/sections/TrustSection";
 import { VisionSection } from "@/features/public/landing/sections/VisionSection";
-import { CTASection } from "@/features/public/landing/sections/CTASection";
 import { PublicLayout } from "@/layouts/PublicLayout";
 import { generateSeoMetadata, organizationSchema, medicalSchema } from "@/shared/lib/seo";
 
@@ -31,7 +30,6 @@ export default function Home() {
       <ClinicianSection />
       <TrustSection />
       <VisionSection />
-      <CTASection />
     </PublicLayout>
   );
 }
