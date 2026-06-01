@@ -1,21 +1,37 @@
 import type { Metadata } from "next";
-import { Inter, Instrument_Serif } from "next/font/google";
+import { Inter, Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
+
+const plusJakarta = Plus_Jakarta_Sans({
+  variable: "--font-plus-jakarta",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+});
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
-const instrumentSerif = Instrument_Serif({
-  variable: "--font-instrument-serif",
-  weight: "400",
+const spaceMono = Space_Mono({
+  variable: "--font-space-mono",
+  weight: ["400", "700"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  title: "LifeBack | Early Depression Detection",
+  title: "SIPL",
+  applicationName: "SIPL",
   description: "AI-assisted behavioral screening platform focused on early depression detection.",
+  icons: {
+    icon: [
+      { url: "/sipl-icon.png?v=sipl-wordmark", type: "image/png", sizes: "512x512" },
+      { url: "/favicon.ico", sizes: "32x32" },
+    ],
+    shortcut: [{ url: "/sipl-icon.png?v=sipl-wordmark", type: "image/png", sizes: "512x512" }],
+    apple: [{ url: "/sipl-icon.png", sizes: "512x512", type: "image/png" }],
+  },
 };
 
 export default function RootLayout({
@@ -24,8 +40,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${instrumentSerif.variable}`}>
-      <body className="antialiased font-sans" suppressHydrationWarning>
+    <html lang="en" className={`${plusJakarta.variable} ${inter.variable} ${spaceMono.variable}`}>
+      <body className="antialiased font-body" suppressHydrationWarning>
         {children}
       </body>
     </html>

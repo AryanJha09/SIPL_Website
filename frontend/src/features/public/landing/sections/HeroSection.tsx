@@ -65,6 +65,7 @@ export function HeroSection() {
               fill
               priority
               className="object-cover opacity-90"
+              sizes="(max-width: 1024px) 100vw, 55vw"
             />
 
             {/* Overlays */}

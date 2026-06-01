@@ -7,13 +7,13 @@ interface BadgeProps extends BaseProps {
 
 export function Badge({ className, children, variant = "default" }: BadgeProps) {
   const variants = {
-    default: "bg-[#EDEDED] text-[#0A0C10]",
-    muted: "bg-[#EDEDED]/50 text-[#4A5568]",
-    white: "bg-white text-[#0A0C10] shadow-sm"
+    default: "border border-[#001B65]/12 bg-[#F9F8F3] text-[#001B65]",
+    muted: "border border-[#001B65]/10 bg-[#001B65]/5 text-[#001B65]/72",
+    white: "border border-[#001B65]/10 bg-white text-[#001B65] shadow-sm"
   };
 
   return (
-    <div className={cn("inline-flex items-center rounded-full px-4 py-1.5 text-sm font-medium", variants[variant], className)}>
+    <div className={cn("inline-flex items-center rounded-[4px] px-4 py-1.5 font-heading text-sm font-semibold", variants[variant], className)}>
       {children}
     </div>
   );

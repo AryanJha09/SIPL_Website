@@ -1,13 +1,15 @@
 import { ReactNode } from "react";
-import { PublicHeader } from "@/features/public/landing/components/PublicHeader";
+import { Header } from "@/components/layout/Header";
 import { Footer } from "@/features/public/landing/components/Footer";
+import { ScrollToTopButton } from "@/features/public/landing/components/ScrollToTopButton";
 
 export function PublicLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col font-sans bg-[#F7F9FC]">
-      <PublicHeader />
+    <div className="flex min-h-screen flex-col bg-[#F9F8F3] font-body">
+      <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <ScrollToTopButton />
     </div>
   );
 }

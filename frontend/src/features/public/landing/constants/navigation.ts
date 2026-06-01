@@ -9,10 +9,6 @@ export const MAIN_NAV: NavItem[] = [
 
 export const FOOTER_SECTIONS: FooterSection[] = [
   {
-    title: "Navigation",
-    links: MAIN_NAV,
-  },
-  {
     title: "Research & Trust",
     links: [
       { label: "Research First", href: "/research" },

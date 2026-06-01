@@ -11,8 +11,17 @@ export function generateSeoMetadata({ title, description, path }: GenerateMetada
   const url = `${baseUrl}${path}`;
 
   return {
-    title,
+    title: "SIPL",
+    applicationName: "SIPL",
     description,
+    icons: {
+      icon: [
+        { url: "/sipl-icon.png?v=sipl-wordmark", type: "image/png", sizes: "512x512" },
+        { url: "/favicon.ico", sizes: "32x32" },
+      ],
+      shortcut: [{ url: "/sipl-icon.png?v=sipl-wordmark", type: "image/png", sizes: "512x512" }],
+      apple: [{ url: "/sipl-icon.png", sizes: "512x512", type: "image/png" }],
+    },
     alternates: {
       canonical: url,
     },

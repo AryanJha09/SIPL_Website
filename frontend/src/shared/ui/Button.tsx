@@ -8,13 +8,13 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({ className, variant = "primary", size = "md", ...props }, ref) => {
-    const baseStyles = "inline-flex items-center justify-center rounded-full font-medium transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8931C4] disabled:pointer-events-none disabled:opacity-50";
+    const baseStyles = "inline-flex items-center justify-center rounded-[4px] font-heading font-semibold transition-colors cursor-pointer focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-2 focus-visible:ring-offset-[#F9F8F3] disabled:pointer-events-none disabled:opacity-50";
     
     const variants = {
-      primary: "bg-[#131313] text-white hover:bg-[#131313]/90",
-      secondary: "bg-[#8931C4] text-white hover:bg-[#8931C4]/90",
-      outline: "border border-[#D6D6D6] bg-transparent hover:bg-[#EDEDED] text-[#0A0C10]",
-      ghost: "hover:bg-[#EDEDED] text-[#0A0C10]"
+      primary: "border border-[#001B65] bg-[#001B65] text-white hover:border-[#D4AF37]",
+      secondary: "border border-[#D4AF37] bg-transparent text-[#001B65] hover:bg-[#D4AF37]/10",
+      outline: "border border-[#001B65]/18 bg-transparent text-[#001B65] hover:border-[#D4AF37]",
+      ghost: "text-[#001B65] hover:bg-[#001B65]/5"
     };
     
     const sizes = {
