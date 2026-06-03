@@ -23,14 +23,27 @@ const spaceMono = Space_Mono({
 export const metadata: Metadata = {
   title: "SIPL",
   applicationName: "SIPL",
-  description: "AI-assisted behavioral screening platform focused on early depression detection.",
+  description:
+    "AI-assisted behavioral screening platform focused on early depression detection.",
   icons: {
     icon: [
-      { url: "/sipl-s-mark.png?v=sipl-mark", type: "image/png", sizes: "72x104" },
-      { url: "/favicon.ico", sizes: "32x32" },
+      {
+        url: "/SIPL_Logo.png",
+        type: "image/png",
+      },
     ],
-    shortcut: [{ url: "/sipl-s-mark.png?v=sipl-mark", type: "image/png", sizes: "72x104" }],
-    apple: [{ url: "/sipl-s-mark.png", sizes: "72x104", type: "image/png" }],
+    shortcut: [
+      {
+        url: "/SIPL_Logo.png",
+        type: "image/png",
+      },
+    ],
+    apple: [
+      {
+        url: "/SIPL_Logo.png",
+        type: "image/png",
+      },
+    ],
   },
 };
 

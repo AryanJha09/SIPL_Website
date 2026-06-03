@@ -47,9 +47,9 @@ export function Footer() {
           <div className="flex justify-start lg:justify-end">
             <Link
               href="/contact?intent=demo"
-              className={cn(requestDemoLinkStyles, "px-9")}
+              className={cn(requestDemoLinkStyles, "px-7")}
             >
-              REQUEST A DEMO
+              Access Platform
             </Link>
           </div>
         </div>

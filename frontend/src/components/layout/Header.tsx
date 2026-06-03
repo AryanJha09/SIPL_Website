@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/shared/lib/utils";
 import { requestDemoLinkStyles } from "@/shared/ui/Button";
+import SIPLLogo from "@/shared/assets/SIPL_Logo.png";
 
 const solutionsLinks = [
   { label: "LifeBack™ Voice", href: "/solutions/lifeback-voice" },
@@ -120,19 +121,22 @@ export function Header() {
       <div className="flex h-20 w-full items-center justify-between px-6 md:px-10 lg:px-16 xl:px-20">
         <Link
           href="/"
-          className="flex items-center focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F5F8FC]"
+          className="flex items-center gap-3 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F5F8FC]"
           aria-label="SIPL home"
           onClick={closeMenu}
         >
-          <span className="relative block h-12 w-32 shrink-0">
+          <span className="relative block h-11 w-11 shrink-0">
             <Image
-              src="/sipl-wordmark.png"
+              src={SIPLLogo}
               alt="SIPL logo"
               fill
               priority
-              sizes="128px"
+              sizes="44px"
               className="object-contain"
             />
+          </span>
+          <span className="font-heading text-[22px] font-bold tracking-[0.12em] text-[#001B65]">
+            SIPL
           </span>
         </Link>
 
@@ -163,7 +167,7 @@ export function Header() {
             href="/contact?intent=demo"
             className={requestDemoLinkStyles}
           >
-            Request a Demo
+            Access Platform
           </Link>
         </div>
 
@@ -230,7 +234,7 @@ export function Header() {
               onClick={closeMenu}
               className={cn(requestDemoLinkStyles, "mt-2 w-full px-6")}
             >
-              Request a Demo
+              Access Platform
             </Link>
           </div>
         </nav>
