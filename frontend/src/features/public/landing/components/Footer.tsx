@@ -1,10 +1,12 @@
 import Link from "next/link";
 import { BrainWaveSeparator } from "@/features/public/landing/components/BrainWaveSeparator";
+import { requestDemoLinkStyles } from "@/shared/ui/Button";
+import { cn } from "@/shared/lib/utils";
 
 const solutionsLinks = [
-  { label: "LifeBack Voice", href: "/solutions/lifeback-voice" },
-  { label: "LifeBack Video", href: "/solutions/lifeback-video" },
-  { label: "LifeBack Genomics", href: "/solutions/lifeback-genomics" },
+  { label: "LifeBack™ Voice", href: "/solutions/lifeback-voice" },
+  { label: "LifeBack™ Video", href: "/solutions/lifeback-video" },
+  { label: "Life Genomics", href: "/solutions/life-genomics" },
   { label: "Inside SIPL", href: "/about" },
   { label: "How SIPL Works", href: "/#detection" },
   { label: "Blog", href: "/blog" },
@@ -33,7 +35,7 @@ const disclaimer =
 
 export function Footer() {
   return (
-    <footer className="w-full bg-[#F9F8F3] text-[#001B65]">
+    <footer className="w-full bg-[#F5F8FC] text-[#001B65]">
       <BrainWaveSeparator />
 
       <div className="px-6 pb-10 pt-20 md:px-10 lg:px-16 xl:px-20">
@@ -45,7 +47,7 @@ export function Footer() {
           <div className="flex justify-start lg:justify-end">
             <Link
               href="/contact?intent=demo"
-              className="inline-flex min-h-14 items-center justify-center rounded-full border border-[#001B65] bg-[#001B65] px-9 font-heading text-[13px] font-bold uppercase tracking-[0.14em] text-white transition-colors hover:border-[#D4AF37] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F9F8F3]"
+              className={cn(requestDemoLinkStyles, "px-9")}
             >
               REQUEST A DEMO
             </Link>
@@ -88,7 +90,7 @@ function FooterColumn({
             <li key={link.label}>
               <Link
                 href={link.href}
-                className="font-body text-base leading-none text-[#001B65]/78 transition-colors hover:text-[#001B65] hover:underline hover:decoration-[#D4AF37] hover:underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F9F8F3]"
+                className="font-body text-base leading-none text-[#001B65]/78 transition-colors hover:text-[#001B65] hover:underline hover:decoration-[#D4AF37] hover:underline-offset-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] focus-visible:ring-offset-4 focus-visible:ring-offset-[#F5F8FC]"
                 target={isExternal ? "_blank" : undefined}
                 rel={isExternal ? "noreferrer" : undefined}
               >

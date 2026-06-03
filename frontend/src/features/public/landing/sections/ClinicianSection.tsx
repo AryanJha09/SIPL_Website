@@ -5,13 +5,13 @@ import { CheckCircle2, Activity, FileText, BarChart3 } from "lucide-react";
 
 export function ClinicianSection() {
   const benefits = [
-    "Augment diagnostic confidence with objective behavioral data.",
-    "Streamline initial assessments to maximize therapy time.",
-    "Monitor longitudinal changes across patient sessions."
+    "Support clinical review with structured multimodal evidence.",
+    "Keep screening outputs separate from diagnosis and treatment decisions.",
+    "Track longitudinal change without replacing professional evaluation."
   ];
 
   return (
-    <section className="py-24 md:py-32 lg:py-40 bg-[#131313] text-white overflow-hidden">
+    <section className="py-24 md:py-32 lg:py-40 bg-[#001B65] text-white overflow-hidden">
       <Container>
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
@@ -25,7 +25,7 @@ export function ClinicianSection() {
 
             <MotionWrapper variant="slideUp" delay={0.1}>
               <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl leading-relaxed">
-                LifeBack translates complex multi-modal AI analysis into clear, structured clinical reports. We provide practitioners with an additional objective lens to support their expertise.
+                LifeBack™ translates multimodal screening observations into clear, structured reports. It is built for clinician support and professional review, with care decisions remaining with qualified professionals.
               </p>
             </MotionWrapper>
 
@@ -41,7 +41,7 @@ export function ClinicianSection() {
             </div>
 
             <MotionWrapper variant="slideUp" delay={0.5}>
-              <Button size="lg" className="bg-white text-[#131313] hover:bg-white/90">
+              <Button size="lg" className="bg-white text-[#001B65] hover:bg-white/90">
                 For Clinicians
               </Button>
             </MotionWrapper>

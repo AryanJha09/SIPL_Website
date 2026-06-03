@@ -7,21 +7,21 @@ export const HOW_IT_WORKS_STEPS = [
   {
     number: "02",
     title: "Answer Guided Questions",
-    description: "Respond to validated behavioral prompts designed to surface subtle indicators."
+    description: "Respond to evidence-informed behavioral prompts designed to surface subtle indicators."
   },
   {
     number: "03",
-    title: "Voice-Based Signal Analysis",
-    description: "Our AI processes acoustic and linguistic markers linked to depressive patterns."
+    title: "Capture Multimodal Signals",
+    description: "Voice, video, and structured response patterns are reviewed as complementary clinical signals."
   },
   {
     number: "04",
-    title: "Behavioral Pattern Review",
-    description: "Multi-modal analysis combines responses and voice data for a holistic view."
+    title: "Generate Evidence Context",
+    description: "LifeBack™ organizes behavioral observations into a clearer evidence layer for assessment support."
   },
   {
     number: "05",
     title: "Clinician-Ready Insights",
-    description: "Generate structured reports to empower human clinicians in their final assessment."
+    description: "Generate structured reports that support professional review without replacing clinical judgment."
   }
 ];

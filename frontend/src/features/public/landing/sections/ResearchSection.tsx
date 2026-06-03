@@ -7,11 +7,11 @@ import { BookOpen } from "lucide-react";
 
 export function ResearchSection() {
   return (
-    <section id="research" className="py-24 md:py-32 bg-white">
+    <section id="research" className="py-24 md:py-32 bg-[#F5F8FC]">
       <Container>
         <SectionHeading 
           title="Rooted in Scientific Rigor" 
-          subtitle="LifeBack's methodology is built upon decades of peer-reviewed psychiatric research and the latest advancements in computational paralinguistics."
+          subtitle="LifeBack™'s methodology is built upon decades of peer-reviewed psychiatric research and the latest advancements in computational paralinguistics."
           className="mb-20"
         />
 
@@ -21,7 +21,7 @@ export function ResearchSection() {
               <Badge variant="muted" className="mb-6">Methodology</Badge>
               <h3 className="text-2xl font-semibold mb-4 text-[#0A0C10]">Voice Biomarkers in Psychiatry</h3>
               <p className="text-[#4A5568] leading-relaxed mb-6">
-                Research indicates that psychomotor retardation, a core symptom of depression, manifests acoustically. LifeBack analyzes vocal prosody, formants, and articulation rates to identify these subtle physiological changes without requiring specialized hardware.
+                Research indicates that psychomotor retardation, a core symptom of depression, manifests acoustically. LifeBack™ analyzes vocal prosody, formants, and articulation rates to identify these subtle physiological changes without requiring specialized hardware.
               </p>
               <div className="flex items-center text-[#8931C4] font-medium text-sm group cursor-pointer">
                 <BookOpen size={16} className="mr-2" />
@@ -58,7 +58,7 @@ export function ResearchSection() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
               
               <MotionWrapper variant="slideUp" delay={0.2} className="bg-white px-6 py-4 md:text-center">
-                <div className="w-4 h-4 rounded-full bg-[#131313] md:mx-auto mb-4 border-4 border-white shadow-sm relative md:-mt-[26px]"></div>
+                <div className="w-4 h-4 rounded-full bg-[#001B65] md:mx-auto mb-4 border-4 border-white shadow-sm relative md:-mt-[26px]"></div>
                 <div className="font-semibold text-lg text-[#0A0C10] mb-2">Phase 1: Voice</div>
                 <p className="text-sm text-[#4A5568]">Acoustic and linguistic analysis integration.</p>
                 <Badge variant="muted" className="mt-4">Current</Badge>

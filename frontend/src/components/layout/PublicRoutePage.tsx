@@ -15,7 +15,7 @@ export function PublicRoutePage({
 }: PublicRoutePageProps) {
   return (
     <PublicLayout>
-      <section className="min-h-[72dvh] bg-[#F9F8F3] px-6 pb-24 pt-40 text-[#001B65] md:px-10 lg:px-16 xl:px-20">
+      <section className="min-h-[72dvh] bg-[#F5F8FC] px-6 pb-24 pt-40 text-[#001B65] md:px-10 lg:px-16 xl:px-20">
         <div className="grid w-full gap-12 border-t border-[#001B65]/12 pt-16 lg:grid-cols-[0.72fr_1.28fr]">
           <div>
             <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#001B65]/60">

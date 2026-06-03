@@ -5,11 +5,11 @@ import { HOW_IT_WORKS_STEPS } from "@/features/public/landing/content/how-it-wor
 
 export function HowItWorksSection() {
   return (
-    <section id="detection" className="py-24 md:py-32 lg:py-40 bg-[#F7F9FC]">
+    <section id="detection" className="py-24 md:py-32 lg:py-40 bg-[#F5F8FC]">
       <Container>
         <SectionHeading 
-          title="How LifeBack Works" 
-          subtitle="A scientifically rigorous, five-step process designed to identify early markers of depression."
+          title="How LifeBack™ Works" 
+          subtitle="A clinical-support workflow for organizing voice, video, behavioral, and genomics-informed evidence around early mental health screening."
           className="mb-20"
         />
 
@@ -31,7 +31,7 @@ export function HowItWorksSection() {
                 )}
                 
                 <div className="flex lg:flex-col items-start lg:items-center gap-6 lg:gap-8">
-                  <div className="relative z-10 flex w-12 h-12 lg:w-24 lg:h-24 rounded-full bg-white border border-[#D6D6D6] items-center justify-center font-serif text-xl lg:text-3xl shrink-0 text-[#131313] shadow-sm">
+                  <div className="relative z-10 flex w-12 h-12 lg:w-24 lg:h-24 rounded-full bg-white border border-[#001B65]/12 items-center justify-center font-serif text-xl lg:text-3xl shrink-0 text-[#001B65] shadow-sm">
                     {step.number}
                   </div>
                   <div className="pt-2 lg:pt-0 lg:text-center">

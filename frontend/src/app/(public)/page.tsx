@@ -10,8 +10,8 @@ import { PublicLayout } from "@/layouts/PublicLayout";
 import { generateSeoMetadata, organizationSchema, medicalSchema } from "@/shared/lib/seo";
 
 export const metadata = generateSeoMetadata({
-  title: "LifeBack | Early Depression Detection",
-  description: "AI-assisted behavioral screening platform focused on early depression detection.",
+  title: "LifeBack™ | Early Depression Detection",
+  description: "LifeBack™ is SIPL's multimodal behavioral screening platform for clinician-supported early mental health assessment.",
   path: "/"
 });
 

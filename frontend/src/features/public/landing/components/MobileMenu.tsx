@@ -41,7 +41,7 @@ export function MobileMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.3 }}
-            className="fixed inset-0 top-0 left-0 w-full h-dvh bg-[#F7F9FC] z-40 flex flex-col pt-24 pb-8 px-6"
+            className="fixed inset-0 top-0 left-0 w-full h-dvh bg-[#F5F8FC] z-40 flex flex-col pt-24 pb-8 px-6"
           >
             <nav className="flex flex-col gap-6 mt-8">
               {MAIN_NAV.map((item, i) => (

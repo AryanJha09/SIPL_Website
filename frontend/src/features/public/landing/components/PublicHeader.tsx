@@ -9,7 +9,6 @@ import { Button } from "@/shared/ui/Button";
 import { MobileMenu } from "@/features/public/landing/components/MobileMenu";
 import { cn } from "@/shared/lib/utils";
 import { motion } from "framer-motion";
-import SIPLLogo from "@/shared/assets/SIPL_Logo.png";
 
 export function PublicHeader() {
   const scrollY = useScrollPosition();
@@ -33,25 +32,25 @@ export function PublicHeader() {
         className={cn(
           "flex items-center justify-between w-full transition-all duration-500 relative mx-auto",
           isScrolled
-            ? "max-w-6xl bg-white/80 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-full px-6 md:px-8 py-3 border border-black/5"
+            ? "max-w-6xl bg-[#F5F8FC]/85 backdrop-blur-md shadow-[0_8px_30px_rgb(0,0,0,0.06)] rounded-full px-6 md:px-8 py-3 border border-[#001B65]/10"
             : "max-w-full bg-transparent px-6 md:px-12 lg:px-16 py-2"
         )}
       >
         {/* Logo Area */}
         <div className="flex items-center gap-3 z-50 shrink-0">
           <Link href="/" className="flex items-center gap-3 md:gap-4 group">
-            <div className="relative h-8 w-8 md:h-10 md:w-10 lg:h-11 lg:w-11 transition-transform group-hover:scale-105 shrink-0">
+            <div className="relative h-10 w-28 transition-transform group-hover:scale-105 shrink-0">
               <Image
-                src={SIPLLogo}
+                src="/sipl-wordmark.png"
                 alt="Sequoia Insilico Private Limited (SIPL) Logo"
                 fill
                 className="object-contain"
-                sizes="(max-width: 768px) 32px, (max-width: 1024px) 40px, 44px"
+                sizes="112px"
                 priority
               />
             </div>
             <div className="flex flex-col justify-center">
-              <span className="text-[15px] md:text-base lg:text-lg font-semibold text-[#0A0C10] leading-none tracking-tight">LifeBack</span>
+              <span className="text-[15px] md:text-base lg:text-lg font-semibold text-[#0A0C10] leading-none tracking-tight">LifeBack™</span>
               <span className="text-[10px] md:text-xs text-[#4A5568] mt-0.5 md:mt-1 font-medium leading-none">by Sequoia In Silico Pvt. Ltd.</span>
             </div>
           </Link>

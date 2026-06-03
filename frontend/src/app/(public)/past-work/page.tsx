@@ -14,12 +14,12 @@ export const metadata = generateSeoMetadata({
 export default function PastWorkPage() {
   return (
     <PublicLayout>
-      <div className="pt-32 pb-24 bg-white">
+      <div className="pt-32 pb-24 bg-[#F5F8FC]">
         <Container>
           <MotionWrapper variant="slideUp" delay={0.1}>
             <SectionHeading
               title="Institutional Archive"
-              subtitle="A legacy of cognitive computing, deep learning, and P4 medicine. Explore the foundational projects that paved the way for LifeBack."
+              subtitle="A legacy of cognitive computing, deep learning, and P4 medicine. Explore the foundational projects that paved the way for LifeBack™."
               align="center"
             />
           </MotionWrapper>
@@ -34,7 +34,7 @@ export default function PastWorkPage() {
               {
                 title: "Grand Challenge Exploration (GCE) - India",
                 category: "Research Contribution",
-                desc: "Awarded the GCE grant (jointly funded by the Bill & Melinda Gates Foundation, BIRAC, DST, and Government of India) for pioneering work on LifeBack, recognizing our unique approach to digital phenotyping."
+                desc: "Awarded the GCE grant (jointly funded by the Bill & Melinda Gates Foundation, BIRAC, DST, and Government of India) for pioneering work on LifeBack™, recognizing our unique approach to digital phenotyping."
               },
               {
                 title: "P4 Medicine Ecosystems",
@@ -48,7 +48,7 @@ export default function PastWorkPage() {
               }
             ].map((project, i) => (
               <MotionWrapper key={project.title} variant="slideUp" delay={0.2 + (i * 0.1)}>
-                <div className="bg-[#F7F9FC] border border-[#EDEDED] p-8 md:p-10 rounded-[32px] flex flex-col md:flex-row gap-8 items-start">
+                <div className="bg-white border border-[#001B65]/10 p-8 md:p-10 rounded-[32px] flex flex-col md:flex-row gap-8 items-start">
                   <div className="md:w-1/3 shrink-0">
                     <Badge variant="muted" className="mb-4">{project.category}</Badge>
                     <h3 className="text-2xl font-serif text-[#0A0C10]">{project.title}</h3>

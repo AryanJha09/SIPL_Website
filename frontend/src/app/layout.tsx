@@ -26,11 +26,11 @@ export const metadata: Metadata = {
   description: "AI-assisted behavioral screening platform focused on early depression detection.",
   icons: {
     icon: [
-      { url: "/sipl-icon.png?v=sipl-wordmark", type: "image/png", sizes: "512x512" },
+      { url: "/sipl-s-mark.png?v=sipl-mark", type: "image/png", sizes: "72x104" },
       { url: "/favicon.ico", sizes: "32x32" },
     ],
-    shortcut: [{ url: "/sipl-icon.png?v=sipl-wordmark", type: "image/png", sizes: "512x512" }],
-    apple: [{ url: "/sipl-icon.png", sizes: "512x512", type: "image/png" }],
+    shortcut: [{ url: "/sipl-s-mark.png?v=sipl-mark", type: "image/png", sizes: "72x104" }],
+    apple: [{ url: "/sipl-s-mark.png", sizes: "72x104", type: "image/png" }],
   },
 };
 

@@ -14,7 +14,7 @@ const config: Config = {
         "sipl-blue": "#001B65",
         eggshell: "#F9F8F3",
         "muted-gold": "#D4AF37",
-        background: "#F9F8F3",
+        background: "#F5F8FC",
         foreground: "#001B65",
       },
       fontFamily: {

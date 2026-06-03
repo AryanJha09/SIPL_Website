@@ -5,15 +5,15 @@ import { generateSeoMetadata } from "@/shared/lib/seo";
 import { MotionWrapper } from "@/shared/animations/MotionWrapper";
 
 export const metadata = generateSeoMetadata({
-  title: "About LifeBack & SIPL | Healthcare Technology",
-  description: "Learn about SIPL and LifeBack's mission to revolutionize early depression detection through AI-assisted behavioral screening.",
+  title: "About LifeBack™ & SIPL | Healthcare Technology",
+  description: "Learn about SIPL and LifeBack™'s mission to support early depression detection through AI-assisted behavioral screening.",
   path: "/about"
 });
 
 export default function AboutPage() {
   return (
     <PublicLayout>
-      <div className="pt-32 pb-24 bg-white">
+      <div className="pt-32 pb-24 bg-[#F5F8FC]">
         <Container>
           <MotionWrapper variant="slideUp" delay={0.1}>
             <SectionHeading
@@ -50,7 +50,7 @@ export default function AboutPage() {
                   { title: "Accessibility", desc: "Scalable technology designed to reach underserved populations." },
                   { title: "Innovation", desc: "Pioneering the intersection of genomics and behavioral health." },
                 ].map((value) => (
-                  <div key={value.title} className="p-8 bg-[#F7F9FC] rounded-[24px] border border-[#EDEDED]">
+                  <div key={value.title} className="p-8 bg-white rounded-[24px] border border-[#001B65]/10">
                     <h4 className="text-xl font-semibold text-[#0A0C10] mb-3">{value.title}</h4>
                     <p className="text-[#4A5568]">{value.desc}</p>
                   </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                 &quot;AI assists. Humans decide.&quot;
               </p>
               <p className="mt-6 text-[#4A5568] text-lg leading-relaxed max-w-2xl mx-auto">
-                Our architecture is strictly Human-in-the-Loop. LifeBack processes complex multimodal signals—voice, video, and behavioral patterns—to surface actionable insights, empowering clinical professionals to make faster, more informed diagnostic decisions.
+                Our architecture is strictly Human-in-the-Loop. LifeBack™ processes complex multimodal signals—voice, video, and behavioral patterns—to surface actionable insights, supporting clinical professionals with more structured evidence.
               </p>
             </MotionWrapper>
           </div>

@@ -5,20 +5,20 @@ import { generateSeoMetadata } from "@/shared/lib/seo";
 import { MotionWrapper } from "@/shared/animations/MotionWrapper";
 
 export const metadata = generateSeoMetadata({
-  title: "Clinical Research & Validation | LifeBack",
-  description: "Explore the scientific foundation, clinical validation, and multimodal biomarker research powering the LifeBack platform.",
+  title: "Clinical Research & Validation | LifeBack™",
+  description: "Explore the scientific foundation, clinical validation, and multimodal biomarker research powering the LifeBack™ platform.",
   path: "/research"
 });
 
 export default function ResearchPage() {
   return (
     <PublicLayout>
-      <div className="pt-32 pb-24 bg-[#F7F9FC]">
+      <div className="pt-32 pb-24 bg-[#F5F8FC]">
         <Container>
           <MotionWrapper variant="slideUp" delay={0.1}>
             <SectionHeading
               title="Scientific Credibility"
-              subtitle="LifeBack is built on a foundation of rigorous clinical validation, exploring multimodal biomarkers to predict and identify depressive states."
+              subtitle="LifeBack™ is built on a foundation of rigorous clinical validation, exploring multimodal biomarkers to predict and identify depressive states."
               align="center"
             />
           </MotionWrapper>
@@ -51,7 +51,7 @@ export default function ResearchPage() {
             ))}
           </div>
 
-          <div className="mt-32 max-w-4xl mx-auto bg-[#131313] text-white p-12 rounded-[32px]">
+          <div className="mt-32 max-w-4xl mx-auto bg-[#001B65] text-white p-12 rounded-[32px]">
             <MotionWrapper variant="fadeIn">
               <h3 className="text-3xl font-serif mb-8 text-center">Research Roadmap</h3>
               <div className="space-y-8">

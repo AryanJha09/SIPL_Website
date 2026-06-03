@@ -63,3 +63,4 @@ docs/
 
 # Next.js Types
 next-env.d.ts
+.vercel

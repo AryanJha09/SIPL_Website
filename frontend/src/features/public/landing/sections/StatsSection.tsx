@@ -3,7 +3,7 @@ import { STATISTICS } from "@/features/public/landing/content/stats.content";
 
 export function StatsSection() {
   return (
-    <section className="bg-[#161A1D] border-b border-white/[0.06] py-12 md:py-16 overflow-hidden">
+    <section className="bg-[#001B65] border-b border-white/[0.06] py-12 md:py-16 overflow-hidden">
       <Marquee speed="slow" className="py-2">
         {STATISTICS.map((stat, i) => (
           <div key={i} className="flex items-center mx-8 shrink-0">

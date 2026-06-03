@@ -50,7 +50,7 @@ export function BrainWaveSeparator() {
   });
 
   return (
-    <div className="relative h-44 w-full overflow-hidden border-t border-[#001B65]/20 bg-[#F9F8F3]">
+    <div className="relative h-44 w-full overflow-hidden bg-[#F5F8FC]">
       <svg
         aria-hidden="true"
         className="absolute inset-0 h-full w-full"
