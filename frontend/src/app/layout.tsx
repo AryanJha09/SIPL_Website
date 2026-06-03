@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter, Plus_Jakarta_Sans, Space_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -43,6 +44,7 @@ export default function RootLayout({
     <html lang="en" className={`${plusJakarta.variable} ${inter.variable} ${spaceMono.variable}`}>
       <body className="antialiased font-body" suppressHydrationWarning>
         {children}
+        <Analytics />
       </body>
     </html>
   );
