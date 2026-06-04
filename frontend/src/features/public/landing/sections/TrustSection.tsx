@@ -29,7 +29,7 @@ export function TrustSection() {
   ];
 
   return (
-    <section id="trust" className="relative py-24 md:py-32 bg-[#F0EBE1] overflow-hidden">
+    <section id="trust" className="relative py-24 md:py-32 bg-[#F5F8FC] overflow-hidden">
       
       {/* Premium Structured Mesh Background */}
       <div className="absolute inset-0 z-0 pointer-events-none">
@@ -41,8 +41,8 @@ export function TrustSection() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,#001B651A_1px,transparent_1px),linear-gradient(to_bottom,#001B651A_1px,transparent_1px)] bg-[size:4rem_4rem]"></div>
         
         {/* Depth / Fades (embedding the grid into the surface) */}
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,#F0EBE1_100%)]"></div>
-        <div className="absolute inset-0 bg-gradient-to-b from-[#F0EBE1] via-transparent to-[#F0EBE1] opacity-40"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_30%,#F5F8FC_100%)]"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-[#F5F8FC] via-transparent to-[#F5F8FC] opacity-40"></div>
       </div>
 
       <Container className="relative z-10">
@@ -55,7 +55,7 @@ export function TrustSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
           {cards.map((card, i) => (
             <MotionWrapper key={card.title} variant="slideUp" delay={0.1 * i}>
-              <Card className="h-full bg-white/60 backdrop-blur-md border border-white/60 hover:bg-white hover:shadow-[0_15px_40px_rgba(0,27,101,0.04)] transition-all duration-500 group relative overflow-hidden">
+              <Card className="h-full bg-[#F9F8F3]/90 backdrop-blur-md border border-white/60 hover:bg-[#F9F8F3] hover:shadow-[0_15px_40px_rgba(0,27,101,0.04)] transition-all duration-500 group relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="flex flex-col h-full relative z-10">
                   <div className="w-14 h-14 rounded-2xl bg-[#001B65] flex items-center justify-center text-white mb-6 shadow-md group-hover:scale-105 transition-transform duration-500">
