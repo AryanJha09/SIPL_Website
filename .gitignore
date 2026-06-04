@@ -60,3 +60,5 @@ docs/
 .cursor/
 .claude/
 .ai/
+.vercel
+.env*
