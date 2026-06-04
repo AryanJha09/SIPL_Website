@@ -15,5 +15,10 @@ export const ANIMATION_VARIANTS = {
         staggerChildren: 0.1
       }
     }
+  },
+  scale: {
+    initial: { opacity: 0, scale: 0.85 },
+    animate: { opacity: 1, scale: 1 },
+    exit: { opacity: 0, scale: 0.95 },
   }
 };

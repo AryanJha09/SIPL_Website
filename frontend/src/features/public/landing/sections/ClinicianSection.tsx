@@ -11,20 +11,33 @@ export function ClinicianSection() {
   ];
 
   return (
-    <section className="py-24 md:py-32 lg:py-40 bg-[#001B65] text-white overflow-hidden">
-      <Container>
+    <section className="relative py-24 md:py-32 lg:py-40 bg-[#001B65] text-white overflow-hidden">
+      {/* Premium Dimensional Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none">
+        {/* Darker depth at top left */}
+        <div className="absolute top-0 left-0 w-[80%] h-[80%] bg-[radial-gradient(ellipse_at_top_left,rgba(0,0,0,0.4)_0%,transparent_70%)]"></div>
+        {/* Rich primary blue center bloom */}
+        <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-full h-full bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.06)_0%,transparent_65%)]"></div>
+        
+        {/* Subtle research mesh (3% opacity) */}
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:3rem_3rem]"></div>
+        
+        {/* Mesh radial mask to ensure it fades smoothly toward edges */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,#001B65_95%)] opacity-80"></div>
+      </div>
+      <Container className="relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
           
           {/* Content */}
           <div className="lg:w-1/2">
             <MotionWrapper variant="slideUp">
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 text-white leading-tight">
+              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl mb-6 text-white/90 leading-tight">
                 Designed for Clinical Excellence
               </h2>
             </MotionWrapper>
 
             <MotionWrapper variant="slideUp" delay={0.1}>
-              <p className="text-lg md:text-xl text-white/70 mb-10 max-w-xl leading-relaxed">
+              <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
                 LifeBack™ translates multimodal screening observations into clear, structured reports. It is built for clinician support and professional review, with care decisions remaining with qualified professionals.
               </p>
             </MotionWrapper>
@@ -32,9 +45,9 @@ export function ClinicianSection() {
             <div className="flex flex-col gap-6 mb-12">
               {benefits.map((benefit, i) => (
                 <MotionWrapper key={i} variant="slideUp" delay={0.2 + (i * 0.1)}>
-                  <div className="flex items-start gap-4">
+                  <div className="flex items-start gap-4 group">
                     <CheckCircle2 className="text-[#8931C4] mt-1 shrink-0" size={24} />
-                    <p className="text-lg text-white/90">{benefit}</p>
+                    <p className="text-lg text-white/[0.85]">{benefit}</p>
                   </div>
                 </MotionWrapper>
               ))}
@@ -92,7 +105,7 @@ export function ClinicianSection() {
             </MotionWrapper>
             
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[#8931C4]/20 blur-[120px] rounded-full z-0 pointer-events-none"></div>
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[130%] h-[130%] bg-white/10 blur-[120px] rounded-full z-0 pointer-events-none"></div>
           </div>
 
         </div>

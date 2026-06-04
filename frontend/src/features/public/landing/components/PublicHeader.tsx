@@ -9,6 +9,7 @@ import { Button } from "@/shared/ui/Button";
 import { MobileMenu } from "@/features/public/landing/components/MobileMenu";
 import { cn } from "@/shared/lib/utils";
 import { motion } from "framer-motion";
+import SIPLLogo from "@/shared/assets/SIPL_Logo.png";
 
 export function PublicHeader() {
   const scrollY = useScrollPosition();
@@ -39,13 +40,13 @@ export function PublicHeader() {
         {/* Logo Area */}
         <div className="flex items-center gap-3 z-50 shrink-0">
           <Link href="/" className="flex items-center gap-3 md:gap-4 group">
-            <div className="relative h-10 w-28 transition-transform group-hover:scale-105 shrink-0">
+            <div className="relative h-8 w-8 md:h-10 md:w-10 lg:h-11 lg:w-11 transition-transform group-hover:scale-105 shrink-0">
               <Image
-                src="/sipl-wordmark.png"
+                src={SIPLLogo}
                 alt="Sequoia Insilico Private Limited (SIPL) Logo"
                 fill
                 className="object-contain"
-                sizes="112px"
+                sizes="(max-width: 768px) 32px, (max-width: 1024px) 40px, 44px"
                 priority
               />
             </div>
