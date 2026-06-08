@@ -50,15 +50,15 @@ export default function PastProjectsPage() {
           <div className="grid w-full gap-12 border-t border-[#001B65]/12 pt-16 lg:grid-cols-[0.9fr_1.1fr]">
             <div>
               <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#001B65]/60">
-                Inside SIPL
+                Past Projects
               </p>
               <h1 className="font-heading text-5xl font-semibold leading-[1.02] tracking-[-0.02em] text-[#001B65] md:text-7xl">
-                Past Projects
+                Past work that shaped SIPL’s clinical AI foundation.
               </h1>
             </div>
 
             <p className="max-w-3xl text-lg leading-8 text-[#001B65]/72 md:text-xl">
-              Archived SIPL research and applied AI initiatives from earlier clinical technology work.
+              SIPL’s archived projects reflect the company’s long-term commitment to applying AI, data science, and clinical intelligence to serious healthcare problems.
             </p>
           </div>
         </section>

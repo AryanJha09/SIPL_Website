@@ -63,7 +63,7 @@ export function PublicHeader() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-lg font-medium text-[#0A0C10]/80 hover:text-[#8931C4] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#8931C4] rounded-md px-2 py-1"
+              className="text-lg font-medium text-[#0A0C10]/80 hover:text-[#D4AF37] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#D4AF37] rounded-md px-2 py-1"
             >
               {item.label}
             </Link>

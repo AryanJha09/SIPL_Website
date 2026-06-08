@@ -45,7 +45,7 @@ export function GenomicsPreviewSection() {
             
             <MotionWrapper variant="slideUp" delay={0.3}>
               <p className="text-lg md:text-xl text-[#4A5568] mb-14 leading-relaxed font-body font-light">
-                SIPL&apos;s focus is multimodal detection: combining behavioral, acoustic, visual, and genomics-informed research signals so LifeBack™ can support a more complete clinical evidence picture.
+                LifeBack™ is SIPL’s multimodal neurobiomarker platform, designed to transform how mental and nervous system disorders are assessed, diagnosed, treated, and prevented through objective, actionable intelligence.
               </p>
             </MotionWrapper>
 

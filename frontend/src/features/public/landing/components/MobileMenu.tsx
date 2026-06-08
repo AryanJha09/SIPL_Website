@@ -54,7 +54,7 @@ export function MobileMenu() {
                   <Link
                     href={item.href}
                     onClick={closeMenu}
-                    className="text-4xl font-serif text-[#0A0C10] hover:text-[#8931C4] transition-colors"
+                    className="text-4xl font-serif text-[#0A0C10] hover:text-[#D4AF37] transition-colors"
                   >
                     {item.label}
                   </Link>

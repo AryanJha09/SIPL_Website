@@ -38,7 +38,7 @@ export function ClinicianSection() {
 
             <MotionWrapper variant="slideUp" delay={0.1}>
               <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
-                LifeBack™ translates multimodal screening observations into clear, structured reports. It is built for clinician support and professional review, with care decisions remaining with qualified professionals.
+                LifeBack™ translates multimodal screening observations into clear, structured reports. We build tools that augment clinicians, never replace them.
               </p>
             </MotionWrapper>
 

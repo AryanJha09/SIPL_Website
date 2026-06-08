@@ -12,7 +12,7 @@ import SIPLLogo from "@/shared/assets/SIPL_Logo.png";
 const solutionsLinks = [
   { label: "LifeBack™ Voice", href: "/solutions/lifeback-voice" },
   { label: "LifeBack™ Video", href: "/solutions/lifeback-video" },
-  { label: "Life Genomics", href: "/solutions/life-genomics" },
+  { label: "LifeBack™ Genomics", href: "/solutions/life-genomics" },
 ];
 
 const insideLinks = [

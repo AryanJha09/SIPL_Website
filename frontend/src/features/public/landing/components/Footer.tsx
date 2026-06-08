@@ -6,7 +6,7 @@ import { cn } from "@/shared/lib/utils";
 const solutionsLinks = [
   { label: "LifeBack™ Voice", href: "/solutions/lifeback-voice" },
   { label: "LifeBack™ Video", href: "/solutions/lifeback-video" },
-  { label: "Life Genomics", href: "/solutions/life-genomics" },
+  { label: "LifeBack™ Genomics", href: "/solutions/life-genomics" },
   { label: "Inside SIPL", href: "/about" },
   { label: "How SIPL Works", href: "/#detection" },
   { label: "Blog", href: "/blog" },

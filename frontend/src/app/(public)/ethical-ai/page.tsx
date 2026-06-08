@@ -5,7 +5,7 @@ export default function EthicalAiPage() {
     <PublicRoutePage
       eyebrow="Governance"
       title="Ethical AI"
-      description="SIPL's position on human-in-the-loop AI, non-diagnostic screening, and avoiding chatbot-style clinical substitution."
+      description="SIPL's position on human-in-the-loop AI, non-diagnostic screening, and clinical responsibility."
     />
   );
 }

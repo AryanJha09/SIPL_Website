@@ -12,7 +12,7 @@ export const metadata = generateSeoMetadata({
 });
 
 const phone = "+91 8920 381 315";
-const address = "1704, BYTE-3, NxOne, Greater NOIDA West,\nGautam Buddha Nagar (UP) 201318";
+const address = "NX ONE BYTE\nGate No. 2\nPlot No-17\nTechzone 4\nAmrapali Dream Valley\nGreater Noida\nUP 201318";
 const emails = ["anupama@sequoiainsilico.com", "contact@sequoiainsilico.com"];
 const mapQuery = "NX ONE BYTE, Greater Noida, Uttar Pradesh";
 const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(mapQuery)}&output=embed`;

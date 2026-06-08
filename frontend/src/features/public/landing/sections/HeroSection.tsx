@@ -37,29 +37,35 @@ export function HeroSection() {
           <div className="flex-1 flex flex-col justify-center px-4 py-8 lg:px-12 lg:py-12 lg:w-[45%] shrink-0 order-2 lg:order-1">
             <MotionWrapper variant="slideUp" delay={0.2}>
               <h1 className="font-serif text-[44px] leading-[1.1] md:text-[56px] lg:text-[72px] tracking-tight text-[#0A0C10] mb-6">
-                Depression hides<br />
-                in plain sight.<br />
-                We help find it early.
+                Clinical-grade AI<br />
+                for mental and nervous<br />
+                system healthcare.
               </h1>
             </MotionWrapper>
 
             <MotionWrapper variant="slideUp" delay={0.3}>
               <p className="text-lg md:text-xl text-[#4A5568] mb-10 max-w-xl leading-relaxed">
-                LifeBack™ brings voice, video, and genomics-informed research together in a
-                multimodal screening platform that helps clinicians see early behavioral patterns
-                with more evidence, not less judgment.
+                Sequoia Insilico builds clinical-grade AI infrastructure for mental and nervous
+                system healthcare. LifeBack™ is SIPL&apos;s multimodal neurobiomarker platform
+                for objective, actionable clinical intelligence.
+              </p>
+            </MotionWrapper>
+
+            <MotionWrapper variant="slideUp" delay={0.35}>
+              <p className="mb-10 font-heading text-base font-semibold uppercase tracking-[0.14em] text-[#001B65]">
+                Voice. Video. Genomics. Clinical intelligence.
               </p>
             </MotionWrapper>
 
             <MotionWrapper variant="slideUp" delay={0.4} className="flex flex-col sm:flex-row gap-4">
-              <Link href="/login" passHref className="w-full sm:w-auto">
+              <Link href="/solutions" passHref className="w-full sm:w-auto">
                 <Button size="lg" className="w-full">
-                  Access Platform
+                  Explore LifeBack™
                 </Button>
               </Link>
               <Link href="/research" passHref className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full">
-                  Explore Research
+                  View Research
                 </Button>
               </Link>
             </MotionWrapper>

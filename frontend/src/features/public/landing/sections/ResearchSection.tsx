@@ -23,7 +23,7 @@ export function ResearchSection() {
               <p className="text-[#4A5568] leading-relaxed mb-6">
                 Research indicates that psychomotor retardation, a core symptom of depression, manifests acoustically. LifeBack™ analyzes vocal prosody, formants, and articulation rates to identify these subtle physiological changes without requiring specialized hardware.
               </p>
-              <div className="flex items-center text-[#8931C4] font-medium text-sm group cursor-pointer">
+              <div className="flex items-center text-[#D4AF37] font-medium text-sm group cursor-pointer">
                 <BookOpen size={16} className="mr-2" />
                 <span>Read foundational research</span>
               </div>
@@ -37,7 +37,7 @@ export function ResearchSection() {
               <p className="text-[#4A5568] leading-relaxed mb-6">
                 By combining established psychometric frameworks (like PHQ-9 and BDI) with dynamic, multi-turn AI interactions, our screening process reduces the self-reporting bias inherent in static questionnaires.
               </p>
-              <div className="flex items-center text-[#8931C4] font-medium text-sm group cursor-pointer">
+              <div className="flex items-center text-[#D4AF37] font-medium text-sm group cursor-pointer">
                 <BookOpen size={16} className="mr-2" />
                 <span>View clinical benchmarks</span>
               </div>

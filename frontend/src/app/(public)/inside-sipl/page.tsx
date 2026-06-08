@@ -1,162 +1,153 @@
 import { PublicLayout } from "@/layouts/PublicLayout";
-import { Container } from "@/shared/ui/Container";
+import { CardGrid, EditorialHero, EditorialSection } from "@/components/layout/EditorialSections";
 import { generateSeoMetadata } from "@/shared/lib/seo";
 
 export const metadata = generateSeoMetadata({
   title: "Inside SIPL | Sequoia Insilico",
-  description:
-    "Inside SIPL's philosophy, research culture, clinical responsibility, and mission behind LifeBack™.",
+  description: "Inside SIPL's philosophy, culture, long-term thinking, and clinical responsibility.",
   path: "/inside-sipl",
 });
 
 const principles = [
   {
-    title: "Clinical complexity deserves humility",
-    text:
-      "Many mental processes are still explained through models of clinical psychology. The field is both art and science, and some questions do not yet fully satisfy strict scientific criteria. Consciousness itself remains incompletely understood.",
+    title: "Science before speed",
+    body: "We never ship before the evidence is ready. Rigorous validation — clinical, computational, and ethical — precedes every release. The pressure to move fast will always exist; the commitment to move right is non-negotiable.",
   },
   {
-    title: "Evidence should support care",
-    text:
-      "LifeBack™ is a registered trademark and a platform dedicated to the treatment cycle of mental and nervous system disorders. SIPL builds it to support Evidence-Based Medicine implementation through objective, multimodal clinical technology.",
+    title: "Patient dignity above all",
+    body: "Every algorithm we build, every dataset we curate, and every product decision we make is filtered through one question: does this serve the patient with dignity? We are building for people at their most vulnerable — we do not forget that.",
   },
   {
-    title: "Clinicians remain central",
-    text:
-      "LifeBack™ is designed for screening, assessment support, evidence organization, and professional review. Care decisions remain with qualified clinical professionals.",
+    title: "Radical intellectual honesty",
+    body: "We say what the data shows, not what we wish it showed. We acknowledge limitations in our models, gaps in our evidence, and uncertainty in our conclusions — because clinical AI that overstates confidence causes harm.",
+  },
+  {
+    title: "Depth over breadth",
+    body: "We solve hard problems fully rather than many problems superficially. Precision psychiatry demands genuine depth — in science, in clinical understanding, in engineering. We resist the temptation to spread thin.",
+  },
+  {
+    title: "Openness as a principle",
+    body: "We share knowledge — through publication, collaboration, and education — because the field advances faster when we do. Proprietary advantage comes from execution, not from hoarding science.",
+  },
+  {
+    title: "Self-disruption, self-competition, self-renewal",
+    body: "We do not wait for the world to make us obsolete — we do it ourselves. Every individual at SIPL is expected to continuously evaluate their own work, challenge their own assumptions, and compete against their own previous best. Excellence is not a destination; it is a discipline of perpetual internal churn.",
   },
 ];
 
-const outreach = [
-  "University research conversations around responsible multimodal screening.",
-  "Clinical outreach with key opinion leaders and mental health professionals.",
-  "Knowledge leadership that treats privacy, evidence quality, and clinical governance as first-order design requirements.",
+const cultureCards = [
+  {
+    title: "We engage for curiosity, not just credentials",
+    body: "We value people who are genuinely curious across domains — who read outside their field, ask uncomfortable questions, and treat knowledge as a lifelong pursuit.",
+  },
+  {
+    title: "Flat by design, deep by discipline",
+    body: "SIPL is a flat team — there is no hierarchy of importance, only clarity of role. Every person on the team is expected to think, challenge, and contribute beyond their job description.",
+  },
+  {
+    title: "Disagreement is a feature, not a failure",
+    body: "The best decisions at SIPL emerge from honest, rigorous debate. We expect team members to challenge assumptions — including those of leadership — with evidence and reasoning.",
+  },
+  {
+    title: "Growth is structured, not accidental",
+    body: "We invest in the development of every team member — through research exposure, clinical immersion, conference participation, and mentorship.",
+  },
+  {
+    title: "Mental health starts here, at home",
+    body: "We cannot build the future of mental healthcare from a team that is burned out, overlooked, or unsupported. SIPL takes the wellbeing of its people seriously — because we mean what we say about mental health being foundational to a productive and fulfilling life.",
+  },
+];
+
+const longTermCards = [
+  {
+    title: "Build for 2035, not next quarter",
+    body: "The problems we are solving — diagnostic heterogeneity in psychiatry, pharmacogenomic stratification, early relapse detection — are decade-scale challenges. We make architectural decisions, research investments, and partnerships based on where the field will be, not just where it is.",
+  },
+  {
+    title: "First principles over borrowed frameworks",
+    body: "Precision psychiatry in India has no established playbook. The population genetics are different. The healthcare infrastructure is different. The disease presentation is different. We do not copy Western models — we reason from first principles about what Indian patients, clinicians, and systems actually need, and we build accordingly.",
+  },
+  {
+    title: "Validation is part of innovation",
+    body: "In clinical AI, the most innovative thing you can do is prove that something works — rigorously, reproducibly, and in the real world. We treat clinical validation not as a regulatory hurdle to clear but as a core expression of our scientific identity.",
+  },
+  {
+    title: "Embrace uncomfortable complexity",
+    body: "Mental and nervous system disorders are among the most complex phenomena in biology. We do not simplify them for convenience. We build systems that hold that complexity — multimodal, longitudinal, context-sensitive — because oversimplification in clinical AI is not just intellectually lazy, it is dangerous.",
+  },
+  {
+    title: "Interoperability as a strategic asset",
+    body: "We build on open standards — FHIR R4, HL7, ABDM, SNOMED — because the future of healthcare is connected, not siloed. LifeBack™ is designed to integrate, extend, and federate — not to lock hospitals into a proprietary ecosystem.",
+  },
+  {
+    title: "The best ideas come from the bedside",
+    body: "Our most important collaborators are the psychiatrists, neurologists, nurses, and patients who live with these problems every day. Innovation at SIPL flows from clinical observation as much as from computation.",
+  },
+];
+
+const dailyCommitments = [
+  "We do hard science on hard problems, without cutting corners.",
+  "We treat every patient in our data as a person, not a data point.",
+  "We compete hardest against ourselves — always raising our own bar.",
+  "We are horizontal — every person here is equally vital to the mission.",
+  "We build for India, with India, and because of India.",
+  "We believe mental health is not a niche — it is the centre of human life.",
+  "And we will not stop until the tools exist to honour that belief.",
 ];
 
 export default function InsideSiplPage() {
   return (
     <PublicLayout>
-      <main className="bg-[#F5F8FC] text-[#001B65]">
-        <section className="px-6 pb-20 pt-40 md:px-10 lg:px-16 xl:px-20">
-          <div className="grid w-full gap-12 border-t border-[#001B65]/12 pt-16 lg:grid-cols-[0.9fr_1.1fr]">
-            <div>
-              <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#001B65]/60">
-                Inside SIPL
-              </p>
-              <h1 className="font-heading text-5xl font-semibold leading-[1.02] tracking-[-0.02em] text-[#001B65] md:text-7xl">
-                Why Sequoia Insilico exists.
-              </h1>
-            </div>
+      <div className="bg-[#F5F8FC]">
+        <EditorialHero eyebrow="Inside SIPL" title="Built like a Sequoia: patient, deep, enduring.">
+          <p>
+            The Sequoia name reflects the belief that enduring systems can begin from small seeds. For SIPL, that means building patiently: a strong team, long-term clinical infrastructure, and a platform where science, clinicians, and technology grow together toward better mental health care.
+          </p>
+        </EditorialHero>
 
-            <div className="max-w-4xl">
-              <p className="mt-8 max-w-3xl text-lg leading-8 text-[#001B65]/72 md:text-xl">
-                SIPL builds research-first clinical intelligence infrastructure for mental and nervous system care. Our work begins with a simple position: technology should help clinicians see more clearly, not replace the people responsible for care.
-              </p>
-            </div>
+        <EditorialSection title="Technology in service of clinical clarity.">
+          <div className="grid gap-6">
+            <p className="font-heading text-2xl font-semibold leading-9 text-[#001B65]">
+              Technology should help clinicians see more clearly, not replace the people responsible for care.
+            </p>
+            <p>
+              Mental and nervous system disorders remain partially understood through both science and clinical models. Clinical psychology remains both science and practice. Many phenomena are still imperfectly understood. Therefore SIPL emphasizes evidence-based medicine, clinical oversight, scientific humility, and objective measurement.
+            </p>
           </div>
-        </section>
+        </EditorialSection>
 
-        <section className="pb-24">
-          <Container>
-            <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
-              <div className="rounded-[28px] border border-[#001B65]/10 bg-[#F9F8F3] p-7 shadow-[0_18px_54px_rgba(0,27,101,0.07)] md:p-10">
-                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#001B65]/58">
-                  Name Philosophy
-                </p>
-                <h2 className="mt-5 font-heading text-3xl font-semibold leading-tight text-[#001B65] md:text-4xl">
-                  Growth from a tiny seed.
-                </h2>
-                <p className="mt-6 text-lg leading-8 text-[#001B65]/74">
-                  The Sequoia name reflects the belief that enduring systems can begin from small seeds. For SIPL, that means building patiently: a strong team, long-term clinical infrastructure, and a platform where science, clinicians, and technology grow together toward better mental health care.
-                </p>
-              </div>
+        <EditorialSection title="How we think, build, and grow together.">
+          <div className="grid gap-8">
+            <p>
+              These principles are not aspirations written for a wall — they are the operating system of SIPL. They govern how we make decisions, how we treat each other, and how we think about the long arc of what we are building.
+            </p>
+            <CardGrid cards={principles} />
+          </div>
+        </EditorialSection>
 
-              <div className="rounded-[28px] border border-[#001B65]/10 bg-white/62 p-7 md:p-10">
-                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#001B65]/58">
-                  Company Direction
-                </p>
-                <h2 className="mt-5 font-heading text-3xl font-semibold leading-tight text-[#001B65] md:text-4xl">
-                  Infrastructure built to mature.
-                </h2>
-                <p className="mt-6 text-lg leading-8 text-[#001B65]/74">
-                  LifeBack™ carries that philosophy into SIPL&apos;s clinical work: a careful, multimodal platform for evidence generation, professional review, and long-term mental health infrastructure rather than short-lived product theatre.
-                </p>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <EditorialSection title="Horizontal. Curious. Rigorous.">
+          <div className="grid gap-8">
+            <p>
+              The problems we are solving sit at the intersection of genomics, neuroscience, machine learning, clinical medicine, and public health. No single discipline contains the answer.
+            </p>
+            <CardGrid cards={cultureCards} columns="two" />
+          </div>
+        </EditorialSection>
 
-        <section className="pb-24">
-          <Container>
-            <div className="rounded-[32px] border border-[#001B65]/10 bg-[#001B65] p-7 text-white shadow-[0_22px_64px_rgba(0,27,101,0.16)] md:p-12 lg:p-14">
-              <div className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
-                <div>
-                  <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-white/58">
-                    Mental Health Framing
-                  </p>
-                  <h2 className="mt-5 font-heading text-3xl font-semibold leading-tight md:text-4xl">
-                    A human right, not a feature category.
-                  </h2>
-                </div>
-                <p className="max-w-4xl text-xl leading-9 text-white/82">
-                  Mental health is a state of mental well-being that enables people to cope with the stresses of life, realize their abilities, learn and work well, and contribute to their community. It has intrinsic and instrumental value and is a basic human right.
-                </p>
-              </div>
-            </div>
-          </Container>
-        </section>
+        <EditorialSection title="Built for the long arc.">
+          <CardGrid cards={longTermCards} />
+        </EditorialSection>
 
-        <section className="pb-24">
-          <Container>
-            <div className="grid gap-6 lg:grid-cols-3">
-              {principles.map((principle) => (
-                <article
-                  key={principle.title}
-                  className="rounded-[28px] border border-[#001B65]/10 bg-[#F9F8F3] p-7 md:p-8"
-                >
-                  <h2 className="font-heading text-2xl font-semibold leading-tight text-[#001B65]">
-                    {principle.title}
-                  </h2>
-                  <p className="mt-5 text-base leading-7 text-[#001B65]/72">
-                    {principle.text}
-                  </p>
-                </article>
-              ))}
-            </div>
-          </Container>
-        </section>
-
-        <section className="pb-28">
-          <Container>
-            <div className="grid gap-10 border-t border-[#001B65]/12 pt-16 lg:grid-cols-[0.75fr_1.25fr]">
-              <div>
-                <p className="font-mono text-[11px] font-bold uppercase tracking-[0.16em] text-[#001B65]/58">
-                  Research Culture
-                </p>
-                <h2 className="mt-5 font-heading text-3xl font-semibold leading-tight text-[#001B65] md:text-4xl">
-                  University, KOL, and clinical outreach.
-                </h2>
-              </div>
-
-              <div>
-                <p className="max-w-3xl text-lg leading-8 text-[#001B65]/74">
-                  SIPL aims to be a knowledge and thought leader, not just a software vendor. The company is building stronger university, research, and clinical outreach so LifeBack™ can develop with scientific discipline, clinical humility, and responsible governance.
-                </p>
-                <div className="mt-10 grid gap-4">
-                  {outreach.map((item) => (
-                    <p
-                      key={item}
-                      className="border-l border-[#D4AF37] pl-5 font-heading text-base font-semibold leading-7 text-[#001B65]"
-                    >
-                      {item}
-                    </p>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </Container>
-        </section>
-      </main>
+        <EditorialSection title="How we show up, every day.">
+          <div className="grid gap-4">
+            {dailyCommitments.map((commitment) => (
+              <p key={commitment} className="border-l border-[#D4AF37] pl-5 font-heading text-base font-semibold leading-7 text-[#001B65]">
+                {commitment}
+              </p>
+            ))}
+          </div>
+        </EditorialSection>
+      </div>
     </PublicLayout>
   );
 }
